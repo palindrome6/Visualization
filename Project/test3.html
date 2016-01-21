@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+  <script src="d3/d3.v3.min.js"></script>
+  <script src="d3/topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="d3/datamaps.world.min.js?v=1"></script>
+  <h2>Datamaps Playground</h2>
+  <p><a href="http://datamaps.github.io/">DataMaps Project Homepage</a></p>
+  <div id="container" style="position: relative; width: 80%; height: 100%;"></div>
+ 
+     
+    <script>
+    var map = new Datamap({
+        element: document.getElementById('container'),
+        projection: 'mercator',
+        height: 800,
+        fills: {
+            HIGH: '#afafaf',
+            LOW: '#123456',
+            MEDIUM: 'blue',
+            UNKNOWN: 'rgb(0,0,0)',
+            defaultFill: 'green'
+        },
+        data: {
+            IRL: {
+                fillKey: 'LOW',
+                numberOfThings: 2002
+            },
+            USA: {
+                fillKey: 'MEDIUM',
+                numberOfThings: 10381
+            }
+        },
+        geographyConfig: {
+            popupTemplate: function(geo, data) {
+                return ['<div class="hoverinfo"><strong>',
+                        'Number of things in ' + geo.properties.name,
+                        ': ' + data.numberOfThings,
+                        '</strong></div>'].join('');
+            }
+        }
+    });
+
+     </script>
+</body>
