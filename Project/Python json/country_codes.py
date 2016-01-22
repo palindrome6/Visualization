@@ -18,7 +18,7 @@ for key in json_data:
             print key,i
 j=0
 
-with open('INTERNET_Z.json', 'w') as outfile:
+with open('INTERNET_Q.json', 'w') as outfile:
     json.dump(json_data, outfile)
 print json_data
 for key in json_data:
