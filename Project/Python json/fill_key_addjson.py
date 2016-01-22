@@ -14,6 +14,9 @@ for key in json_data:
     print json_data[key]["fillKey"]
 
 print(json_data)
+
+with open('INTERNET_R.json', 'w') as outfile:
+    json.dump(json_data, outfile)
 # i=0
 # for key,vslue in json_data:
 #     if key.1990>=60:
