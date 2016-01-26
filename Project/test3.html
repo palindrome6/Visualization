@@ -1,21 +1,121 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<body>
   <script src="d3/d3.v3.min.js"></script>
   <script src="d3/topojson.v1.min.js"></script>
   <script src="myFunction_1990.js"></script>
   <script src="myFunction_1991.js"></script>
   <script src="myFunction_1992.js"></script>
-  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="myFunction_1993.js"></script>
+  <script src="myFunction_1994.js"></script>
+  <script src="d3/jquery-1.12.0.min.js"></script>
   <script src="d3/datamaps.world.min.js?v=1"></script>
-  <h2>Datamaps Playground</h2>
-  <p><a href="http://datamaps.github.io/">DataMaps Project Homepage</a></p>
+<head>
+    <style>
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
-  <div id="container" style="position: relative; width: 100%; height: 100%;"></div>
-  <p id="demo" onclick="myFunction_1990()">1990</p>
-  <p id="demo" onclick="myFunction_1991()">1991</p>
-  <p id="demo" onclick="myFunction_1992()">1992</p>
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #3e8e41;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        .show {display:block;}
+    </style>
+</head>
+<body>
+<script src="d3/jquery-1.12.0.min.js"></script>
+<h2>Internet Usage</h2>
+<p>Select year to visualize</p>
+
+<div class="dropdown">
+    <button id="myBtn" class="dropbtn">Year</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a id="myLink90" href="#" onclick="myFunction_1990();">1990</a>
+        <a id="myLink91" href="#" onclick="myFunction_1991();">1991</a>
+        <a id="myLink92" href="#" onclick="myFunction_1992();">1992</a>
+        <a id="myLink93" href="#" onclick="myFunction_1993();">1993</a>
+        <a id="myLink94" href="#" onclick="myFunction_1994();">1994</a>
 
 
+   
+    </div>
+</div>
+  <div id="container90" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container91" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container92" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container93" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container94" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container95" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container96" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container97" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container98" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container99" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container00" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container01" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container02" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container03" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container04" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container05" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container06" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container07" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container08" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container09" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container10" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+  <div id="container11" style="display: block; height: 50%; width: 50%; max-height: 450px;"></div>
+     
+<script>
+    // Get the button, and when the user clicks on it, execute myFunction
+    document.getElementById("myBtn").onclick = function() {myFunction()};
+
+
+    /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+</script>
 
 </body>
+

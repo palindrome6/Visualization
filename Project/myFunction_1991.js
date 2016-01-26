@@ -1,20 +1,44 @@
 function myFunction_1991() {
+
+document.getElementById('container90').style.display='none'; // To hide
+document.getElementById('container92').style.display='none'; // To hide
+document.getElementById('container93').style.display='none'; // To hide
+document.getElementById('container94').style.display='none'; // To hide
+document.getElementById('container95').style.display='none'; // To hide
+document.getElementById('container96').style.display='none'; // To hide
+document.getElementById('container97').style.display='none'; // To hide
+document.getElementById('container98').style.display='none'; // To hide
+document.getElementById('container99').style.display='none'; // To hide
+document.getElementById('container00').style.display='none'; // To hide
+document.getElementById('container01').style.display='none'; // To hide
+document.getElementById('container02').style.display='none'; // To hide
+document.getElementById('container03').style.display='none'; // To hide
+document.getElementById('container04').style.display='none'; // To hide
+document.getElementById('container05').style.display='none'; // To hide
+document.getElementById('container06').style.display='none'; // To hide
+document.getElementById('container07').style.display='none'; // To hide
+document.getElementById('container08').style.display='none'; // To hide
+document.getElementById('container09').style.display='none'; // To hide
+document.getElementById('container10').style.display='none'; // To hide
+document.getElementById('container11').style.display='none'; // To hide
+document.getElementById('container91').style.display='block'; // To show
+
     var map1 = new Datamap({
-        element: document.getElementById('container'),
+        element: document.getElementById('container91'),
         projection: 'mercator',
         height: 800,
         fills: {
-            LEQ5:'#fff7fb',
-            LEQ10:'#ece7f2',
-            LEQ20:'#d0d1e6',
-            LEQ30:'#a6bddb',
+            LEQ5:'#023858',
+            LEQ10:'#045a8d',
+            LEQ20:'#0570b0',
+            LEQ30:'#a3690c0',
             LEQ40:'#74a9cf',
-            LEQ50:'#3690c0',
-            LEQ60:'#0570b0',
-            LEQ70:'#045a8d',
-            LEQ100:'#023858',
+            LEQ50:'#a6bddb',
+            LEQ60:'#d0d1e6',
+            LEQ70:'#ece7f2',
+            LEQ100:'#fff7fb',
             UNKNOWN: 'rgb(0,0,0)',
-            defaultFill: '#fff7fb'
+            defaultFill: '#023858'
         },       
         data:{
   AGO: {
@@ -5275,7 +5299,13 @@ function myFunction_1991() {
                         ' in ' + ' 1991:' + data['1991'],
                         '</strong></div>'].join('');
             },
-            highlightBorderWidth: 3
+            highlightBorderWidth: 3,
+            highlightBorderColor: '#bada55'
+        },
+        done: function(datamap) {
+            datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+                alert(geography.id);
+            });
         }
     });
 }
