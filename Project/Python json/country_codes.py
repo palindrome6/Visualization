@@ -24,5 +24,3 @@ print json_data
 for key in json_data:
     j=j+1
     print key,j
-germany = pycountry.countries.get(alpha2='DE')
-print germany.alpha3

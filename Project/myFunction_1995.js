@@ -1,10 +1,9 @@
-function myFunction_1992() {
-
-document.getElementById('container90').style.display='none'; // To hide
+function myFunction_1995() {
 document.getElementById('container91').style.display='none'; // To hide
+document.getElementById('container92').style.display='none'; // To hide
 document.getElementById('container93').style.display='none'; // To hide
 document.getElementById('container94').style.display='none'; // To hide
-document.getElementById('container95').style.display='none'; // To hide
+document.getElementById('container90').style.display='none'; // To hide
 document.getElementById('container96').style.display='none'; // To hide
 document.getElementById('container97').style.display='none'; // To hide
 document.getElementById('container98').style.display='none'; // To hide
@@ -21,13 +20,11 @@ document.getElementById('container08').style.display='none'; // To hide
 document.getElementById('container09').style.display='none'; // To hide
 document.getElementById('container10').style.display='none'; // To hide
 document.getElementById('container11').style.display='none'; // To hide
-document.getElementById('container92').style.display='block'; // To show
-
-
+document.getElementById('container95').style.display='block'; // To show
     var map1 = new Datamap({
-        element: document.getElementById('container92'),
-        projection: 'mercator',
+        element: document.getElementById('container95'),
         height: 800,
+        projection: 'mercator',
         fills: {
             LEQ5:'#7f0000',
             LEQ10:'#b30000',
@@ -1040,7 +1037,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 82.49,
     "2010": 86.89,
     "2011": 89.37,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   URY: {
     "1990": 0,
@@ -1965,7 +1962,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 83.25,
     "2010": 84.21,
     "2011": 88.336,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   TCD: {
     "1990": 0,
@@ -2140,7 +2137,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 91,
     "2010": 90,
     "2011": 91,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   AFG: {
     "1990": 0,
@@ -2615,7 +2612,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 92.08,
     "2010": 93.39,
     "2011": 93.97,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   CZE: {
     "1990": 0,
@@ -3015,7 +3012,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 93,
     "2010": 95,
     "2011": 95.02,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   ETH: {
     "1990": 0,
@@ -3615,7 +3612,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 89.63,
     "2010": 90.72,
     "2011": 92.3,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   AUS: {
     "1990": 0.585094712206538,
@@ -4140,7 +4137,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 71,
     "2010": 74,
     "2011": 77.863021,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   SSD: {
     "1990": 0,
@@ -5297,7 +5294,7 @@ document.getElementById('container92').style.display='block'; // To show
             popupTemplate: function(geo, data) {
                 return ['<div class="hoverinfo"><strong>',
                         '% of internet users in ' + geo.properties.name,
-                        ' in ' + ' 1992:' + data['1992'],
+                        ' in ' + ' 1995:' + data['1995'],
                         '</strong></div>'].join('');
             },
             highlightBorderWidth: 3,

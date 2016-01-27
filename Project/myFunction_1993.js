@@ -26,17 +26,17 @@ document.getElementById('container93').style.display='block'; // To show
         height: 800,
         projection: 'mercator',
         fills: {
-            LEQ5:'#023858',
-            LEQ10:'#045a8d',
-            LEQ20:'#0570b0',
-            LEQ30:'#a3690c0',
-            LEQ40:'#74a9cf',
-            LEQ50:'#a6bddb',
-            LEQ60:'#d0d1e6',
-            LEQ70:'#ece7f2',
-            LEQ100:'#fff7fb',
+            LEQ5:'#7f0000',
+            LEQ10:'#b30000',
+            LEQ20:'#d7301f',
+            LEQ30:'#ef6548',
+            LEQ40:'#fc8d59',
+            LEQ50:'fdbb84',
+            LEQ60:'#fdd49e',
+            LEQ70:'#fee8c8',
+            LEQ100:'#fff7ec',
             UNKNOWN: 'rgb(0,0,0)',
-            defaultFill: '#023858'
+            defaultFill: '#7f0000'
         },       
         data:{
   AGO: {

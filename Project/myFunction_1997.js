@@ -1,12 +1,11 @@
-function myFunction_1992() {
-
-document.getElementById('container90').style.display='none'; // To hide
+function myFunction_1997() {
 document.getElementById('container91').style.display='none'; // To hide
+document.getElementById('container92').style.display='none'; // To hide
 document.getElementById('container93').style.display='none'; // To hide
 document.getElementById('container94').style.display='none'; // To hide
 document.getElementById('container95').style.display='none'; // To hide
 document.getElementById('container96').style.display='none'; // To hide
-document.getElementById('container97').style.display='none'; // To hide
+document.getElementById('container90').style.display='none'; // To hide
 document.getElementById('container98').style.display='none'; // To hide
 document.getElementById('container99').style.display='none'; // To hide
 document.getElementById('container00').style.display='none'; // To hide
@@ -21,13 +20,11 @@ document.getElementById('container08').style.display='none'; // To hide
 document.getElementById('container09').style.display='none'; // To hide
 document.getElementById('container10').style.display='none'; // To hide
 document.getElementById('container11').style.display='none'; // To hide
-document.getElementById('container92').style.display='block'; // To show
-
-
+document.getElementById('container97').style.display='block'; // To show
     var map1 = new Datamap({
-        element: document.getElementById('container92'),
-        projection: 'mercator',
+        element: document.getElementById('container97'),
         height: 800,
+        projection: 'mercator',
         fills: {
             LEQ5:'#7f0000',
             LEQ10:'#b30000',
@@ -640,7 +637,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 69.4,
     "2010": 72,
     "2011": 74.5,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   SAU: {
     "1990": 0,
@@ -715,7 +712,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 64,
     "2010": 70,
     "2011": 72,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   BFA: {
     "1990": 0,
@@ -1040,7 +1037,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 82.49,
     "2010": 86.89,
     "2011": 89.37,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   URY: {
     "1990": 0,
@@ -1340,7 +1337,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 27.3965096846662,
     "2010": 0,
     "2011": 0,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   SYR: {
     "1990": 0,
@@ -1665,7 +1662,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 79,
     "2010": 82,
     "2011": 83,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   GUM: {
     "1990": 0,
@@ -1740,7 +1737,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 78,
     "2010": 78,
     "2011": 82,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   GUY: {
     "1990": 0,
@@ -1965,7 +1962,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 83.25,
     "2010": 84.21,
     "2011": 88.336,
-    fillKey: "LEQ5"
+    fillKey: "LEQ30"
   },
   TCD: {
     "1990": 0,
@@ -2140,7 +2137,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 91,
     "2010": 90,
     "2011": 91,
-    fillKey: "LEQ5"
+    fillKey: "LEQ30"
   },
   AFG: {
     "1990": 0,
@@ -2290,7 +2287,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 62.83,
     "2010": 63,
     "2011": 64,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   AND: {
     "1990": 0,
@@ -2615,7 +2612,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 92.08,
     "2010": 93.39,
     "2011": 93.97,
-    fillKey: "LEQ5"
+    fillKey: "LEQ30"
   },
   CZE: {
     "1990": 0,
@@ -2790,7 +2787,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 87.31,
     "2010": 90.62,
     "2011": 90.89,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   ISR: {
     "1990": 0.110773866229479,
@@ -3015,7 +3012,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 93,
     "2010": 95,
     "2011": 95.02,
-    fillKey: "LEQ5"
+    fillKey: "LEQ30"
   },
   ETH: {
     "1990": 0,
@@ -3565,7 +3562,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 86.84,
     "2010": 88.72,
     "2011": 90,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   ZWE: {
     "1990": 0,
@@ -3615,7 +3612,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 89.63,
     "2010": 90.72,
     "2011": 92.3,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   AUS: {
     "1990": 0.585094712206538,
@@ -3640,7 +3637,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 74.25,
     "2010": 76,
     "2011": 79,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   AUT: {
     "1990": 0.130369376859149,
@@ -3665,7 +3662,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 73.45,
     "2010": 75.17,
     "2011": 79.8,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   VEN: {
     "1990": 0,
@@ -3815,7 +3812,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 78,
     "2010": 78.21,
     "2011": 79.53,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   ALB: {
     "1990": 0,
@@ -4140,7 +4137,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 71,
     "2010": 74,
     "2011": 77.863021,
-    fillKey: "LEQ5"
+    fillKey: "LEQ30"
   },
   SSD: {
     "1990": 0,
@@ -4315,7 +4312,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 80.3,
     "2010": 80.3,
     "2011": 83,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   KOR: {
     "1990": 0.0232650923969655,
@@ -4390,7 +4387,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 81.3,
     "2010": 83.9,
     "2011": 85.2,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   CYP: {
     "1990": 0,
@@ -4465,7 +4462,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 69,
     "2010": 71,
     "2011": 75,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   SOM: {
     "1990": 0,
@@ -4690,7 +4687,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 72.5,
     "2010": 74.1,
     "2011": 76.5,
-    fillKey: "LEQ5"
+    fillKey: "LEQ10"
   },
   MWI: {
     "1990": 0,
@@ -4990,7 +4987,7 @@ document.getElementById('container92').style.display='block'; // To show
     "2009": 79.7,
     "2010": 83,
     "2011": 86,
-    fillKey: "LEQ5"
+    fillKey: "LEQ20"
   },
   ITA: {
     "1990": 0.017544562355015,
@@ -5297,7 +5294,7 @@ document.getElementById('container92').style.display='block'; // To show
             popupTemplate: function(geo, data) {
                 return ['<div class="hoverinfo"><strong>',
                         '% of internet users in ' + geo.properties.name,
-                        ' in ' + ' 1992:' + data['1992'],
+                        ' in ' + ' 1997:' + data['1997'],
                         '</strong></div>'].join('');
             },
             highlightBorderWidth: 3,

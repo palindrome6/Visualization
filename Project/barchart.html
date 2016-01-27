@@ -3,10 +3,10 @@
   <script src="d3/d3.v3.min.js"></script>
   <script src="d3/dimple.v2.1.6.min.js"></script>
   <script type="text/javascript">
-    var svg = dimple.newSvg("#chartContainer", 1590, 100000);
+    var svg = dimple.newSvg("#chartContainer", 1590, 1000);
     d3.csv("bar.csv", function (data) {
       var myChart = new dimple.chart(svg, data);
-      myChart.setBounds(100, 60, 2000, 605)
+      myChart.setBounds(100, 60, 2000, 300)
       var x = myChart.addCategoryAxis("x", "country");
       myChart.addMeasureAxis("y", "percent");
       myChart.addSeries(null, dimple.plot.bar);
