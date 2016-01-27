@@ -1,4 +1,5 @@
 function myFunction_2001() {
+d3.select("svg").remove();
 document.getElementById('container91').style.display='none'; // To hide
 document.getElementById('container92').style.display='none'; // To hide
 document.getElementById('container93').style.display='none'; // To hide
@@ -20,7 +21,29 @@ document.getElementById('container08').style.display='none'; // To hide
 document.getElementById('container09').style.display='none'; // To hide
 document.getElementById('container10').style.display='none'; // To hide
 document.getElementById('container11').style.display='none'; // To hide
+document.getElementById('container91z').style.display='none'; // To hide
+document.getElementById('container92z').style.display='none'; // To hide
+document.getElementById('container93z').style.display='none'; // To hide
+document.getElementById('container94z').style.display='none'; // To hide
+document.getElementById('container95z').style.display='none'; // To hide
+document.getElementById('container96z').style.display='none'; // To hide
+document.getElementById('container97z').style.display='none'; // To hide
+document.getElementById('container98z').style.display='none'; // To hide
+document.getElementById('container99z').style.display='none'; // To hide
+document.getElementById('container00z').style.display='none'; // To hide
+document.getElementById('container90z').style.display='none'; // To hide
+document.getElementById('container02z').style.display='none'; // To hide
+document.getElementById('container03z').style.display='none'; // To hide
+document.getElementById('container04z').style.display='none'; // To hide
+document.getElementById('container05z').style.display='none'; // To hide
+document.getElementById('container06z').style.display='none'; // To hide
+document.getElementById('container07z').style.display='none'; // To hide
+document.getElementById('container08z').style.display='none'; // To hide
+document.getElementById('container09z').style.display='none'; // To hide
+document.getElementById('container10z').style.display='none'; // To hide
+document.getElementById('container11z').style.display='none'; // To hide
 document.getElementById('container01').style.display='block'; // To show
+document.getElementById('container01z').style.display='block'; // To show
     var map1 = new Datamap({
         element: document.getElementById('container01'),
         height: 800,
@@ -5306,4 +5329,5 @@ document.getElementById('container01').style.display='block'; // To show
             });
         }
     });
+
 }

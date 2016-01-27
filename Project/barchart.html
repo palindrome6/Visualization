@@ -6,7 +6,7 @@
     var svg = dimple.newSvg("#chartContainer", 1590, 1000);
     d3.csv("bar.csv", function (data) {
       var myChart = new dimple.chart(svg, data);
-      myChart.setBounds(100, 60, 2000, 300)
+      myChart.setBounds(10, 10, 200, 200)
       var x = myChart.addCategoryAxis("x", "country");
       myChart.addMeasureAxis("y", "percent");
       myChart.addSeries(null, dimple.plot.bar);
