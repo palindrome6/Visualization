@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-  <script src="d3/d3.v3.min.js"></script>
+
+  <script src="d3/d3.min.js"></script>
   <script src="d3/topojson.v1.min.js"></script>
   <script src="myFunction_1990.js"></script>
   <script src="myFunction_1991.js"></script>
@@ -45,14 +46,11 @@
   <script src="mybar_2009.js"></script>
   <script src="mybar_2010.js"></script>
   <script src="mybar_2011.js"></script>
-  <script src="Line-Chart.js"></script>
+<script src="d3/dimple.v2.1.6.min.js"></script>
 
-  <script src="d3/d3.v3.min.js"></script>
-  <script src="d3/dimple.v2.1.6.min.js"></script>
-  <script type="text/javascript">
-  <script src="d3/jquery-1.12.0.min.js"></script>
   <script src="d3/datamaps.world.min.js?v=1"></script>
 <head>
+    <meta charset="utf-8"/>
     <style>
         .dropbtn {
             background-color: #4CAF50;
@@ -128,8 +126,9 @@
         .show {display:block;}
     </style>
 </head>
+
 <body>
-<script src="d3/jquery-1.12.0.min.js"></script>
+
 <h2><center>INTERNET USAGE</center></h2>
 <p>Select year to visualize</p>
 
@@ -158,61 +157,58 @@
         <a id="myLink09" href="#" onclick="myFunction_2009(); mybar_2009();">2009</a>
         <a id="myLink10" href="#" onclick="myFunction_2010(); mybar_2010();">2010</a>
         <a id="myLink11" href="#" onclick="myFunction_2011(); mybar_2011();">2011</a>
-
-  
     </div>
 </div>
   <div id="container90" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container90z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
- 
+    <div id="container90z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container91" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container91z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container91z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container92" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container92z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container92z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container93" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container93z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container93z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container94" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container94z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container94z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container95" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container95z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container95z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container96" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container96z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container96z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container97" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container97z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container97z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container98" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container98z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container98z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container99" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container99z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container99z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container00" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container00z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container00z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container01" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container01z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container01z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container02" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container02z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container02z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container03" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container03z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container03z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container04" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container04z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container04z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container05" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container05z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container05z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container06" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container06z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container06z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container07" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container07z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container07z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container08" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container08z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container08z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container09" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container09z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container09z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container10" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container10z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
+    <div id="container10z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
   <div id="container11" style="display: block; height: 50%; width: 50%; max-height: 450px;top: 150px;"></div>
-    <div id="container11z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 250px;left: -130px; max-height: 450px;"></div>
-     
+    <div id="container11z" style="position: relative;display: block; float: left;clear:both; height: 50%; width: 50%;top: 450px;left: -130px; max-height: 450px;"></div>
+<div id="aaa91" style="position: absolute; display: block; height: 30%; width: 42%; max-height: 450px; top:350px; left:1000px; "></div>
+
+
 <script>
     // Get the button, and when the user clicks on it, execute myFunction
     document.getElementById("myBtn").onclick = function() {myFunction()};
-
-
     /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
@@ -221,11 +217,9 @@
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
-
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
             for (i = 0; i < dropdowns.length; i++) {
-
                 var openDropdown = dropdowns[i];
                 if (openDropdown.classList.contains('show')) {
                     openDropdown.classList.remove('show');
@@ -233,7 +227,6 @@
             }
         }
     }
-
 </script>
 
 </body>
